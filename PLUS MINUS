@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int N, n, total;
+    float p = 0., ne= 0., z = 0.;
+    
+    cin >> N;
+    
+    total = N;
+    
+    while (N--) {
+        cin >> n;
+        if (n > 0) p++;
+        else if (n < 0) ne++;
+        else z++;
+    }
+    
+    cout << p / total << endl;
+    cout << ne / total << endl;
+    cout << z / total << endl;
+    
+    return 0;
+}
